@@ -2,58 +2,60 @@ body{
     background-color: #ffd0cd;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
+/* @meida (prefers-color-scheme: dark){
+   background-color: 
+}  */
 h1{
     color: #707070;
     text-align: center;
+    font-size: 60px;
 }
 #btn{
     width: 70px;
     height: 25px;
-    color: #707070;
+    color: black;
     background-color: #ffd0cd;
     border: none;
     border-radius: 20px;
 }
-#container{
-   display: grid;
-   place-items: center;
-   justify-self: center;
-   background-color: white;
-   width: 400px;
-   border-radius: 20px;
-   padding: 20px;
-   
-
-}
-#cont{
-    /* display: flex;
+#mainContainer{
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    gap: 20px; */
 }
+#container{
+   display: grid;
+   justify-self: center;
+   background-color: white;
+   width: 380px;
+   height: 200px;
+   border-radius: 20px;
+   padding: 20px;
+   margin-top: 100px;
+}
+  
 #input{
     border: none;
     border-bottom: 2px solid #ffd0cd;
+    font-size: 16px;
 }
 input:focus{
     outline: none;
     border: none;
 }
-#tcontainer{
-   /* display: grid;
-   place-items: center; */
-   
+#audioButton{
+    width: 30px;
+    height: 30px;
+    margin-left: 340px;
+    border: none;
+    background: none;
+    border-radius: 50%;
 }
-#input{
+#speaker-icon{
+    height: 20px;
+    width: 20px;
+    background-color: #ffd0cd;
 }
-@media screen and (max-width: 1000px){
 
-}
-@media screen and (max-width: 800px){
-
-}
-@media screen and (max-width: 600){
-
-}
