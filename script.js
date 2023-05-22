@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
 audio.addEventListener('click', async () => {
   const wordTwo = textInput.value
 
-    const response = await axios.get(`https://api.dictionaryapi.dev/media/pronunciations/en/${wordTwo}-1-au.mp3`)
+    const response = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${wordTwo}`)
     
-    const audioUrl = response.data[0].phonetics[1].sourceUrl
+    const audioUrl = response.data[0].phonetics[0].audio
     console.log(audioUrl)
     audioPlayer.src = audioUrl
     audioPlayer.play()

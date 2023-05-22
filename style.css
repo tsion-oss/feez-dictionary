@@ -4,9 +4,6 @@ body{
     padding: 0;
     text-align: center;
 }
-/* @meida (prefers-color-scheme: dark){
-   background-color: 
-}  */
 h1{
     color: #707070;
     text-align: center;
@@ -14,7 +11,7 @@ h1{
 }
 #btn{
     width: 70px;
-    height: 25px;
+    height: 27px;
     color: black;
     background-color: #ffd0cd;
     border: none;
@@ -29,11 +26,12 @@ h1{
    display: grid;
    justify-self: center;
    background-color: white;
-   width: 380px;
-   height: 200px;
+   width: 380;
+   height: auto;
    border-radius: 20px;
    padding: 20px;
    margin-top: 100px;
+   overflow: auto;
 }
   
 #input{
@@ -49,7 +47,6 @@ input:focus{
 #audioButton{
     width: 30px;
     height: 30px;
-    margin-left: 340px;
     border: none;
     background: none;
     border-radius: 50%;
@@ -63,10 +60,44 @@ input:focus{
 #example{
     border-left: #ffd0cd 3px solid;
     padding: 5px;
+    background-color: rgba(255, 208, 205, 0.1);
+    border-radius: 4px;
 }
 #tcontainer{
     text-align: left;
     margin-left: 40px;
+    margin-top: -20px;
 }
+#word-n-button{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#word-n-button h2 {
+   margin-right: 190px;
+    font-size: 30px;
+}
+/* @media  screen and (max-width: 1200px){
+    body{
 
+    }
+}
+@media  screen and (max-width: 1000px) {
+    
+}
+@media  screen and (max-width: 800px) {
+    
+} */
+@media  screen and (max-width: 600px) {
+    h1{
+        font-size: 50px;
+    }
+    
+}
+/* @media screen and (max-width: 450px){
+    
+}
+@media screen and (max-width: 400px) {
 
+} */
