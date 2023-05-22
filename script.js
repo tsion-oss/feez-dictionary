@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(cit);
             paragraph.innerText = cit;
 
-            let example = response.data[0].meanings[0].definitions[0].example;
+            let example = response.data[0].meanings[0].definitions[1].example;
             console.log(example)
             paragraphTwo.innerText = example
 
-            let synonym = response.data[0].meanings[0].definitions[0].synonyms;
+            let synonym = response.data[0].meanings[1].synonyms;
             paragraphThree.innerHTML = synonym
 
         } catch (error) {
@@ -45,16 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 audio.addEventListener('click', async () => {
-  const word = 'example'
+  const wordTwo = textInput.value
 
-    const response = await axios.get(`https://api.dictionaryapi.dev/media/pronunciations/en/flower-1-au.mp3`)
+    const response = await axios.get(`https://api.dictionaryapi.dev/media/pronunciations/en/${wordTwo}-1-au.mp3`)
     
-    const audioUrl = response.data[0].phonetics[0].audio
+    const audioUrl = response.data[0].phonetics[1].sourceUrl
+    console.log(audioUrl)
     audioPlayer.src = audioUrl
     audioPlayer.play()
 
   
-})
+});
 
 
 

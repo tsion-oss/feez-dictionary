@@ -40,6 +40,7 @@ h1{
     border: none;
     border-bottom: 2px solid #ffd0cd;
     font-size: 16px;
+    margin-right: 40px;
 }
 input:focus{
     outline: none;
@@ -54,8 +55,18 @@ input:focus{
     border-radius: 50%;
 }
 #speaker-icon{
-    height: 20px;
-    width: 20px;
+    width: 37px;
+    height: 37px;
     background-color: #ffd0cd;
+    border-radius: 20px;
 }
+#example{
+    border-left: #ffd0cd 3px solid;
+    padding: 5px;
+}
+#tcontainer{
+    text-align: left;
+    margin-left: 40px;
+}
+
 
