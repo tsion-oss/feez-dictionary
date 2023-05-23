@@ -10,12 +10,13 @@ h1{
     font-size: 60px;
 }
 #btn{
-    width: 70px;
-    height: 27px;
-    color: black;
+    width: 80px;
+    height: 35px;
+    color: rgb(49, 49, 49);
     background-color: #ffd0cd;
     border: none;
     border-radius: 20px;
+    font-size: 17px;
 }
 #mainContainer{
     display: flex;
@@ -39,6 +40,7 @@ h1{
     border-bottom: 2px solid #ffd0cd;
     font-size: 16px;
     margin-right: 40px;
+    height: 40px;
 }
 input:focus{
     outline: none;
@@ -50,6 +52,7 @@ input:focus{
     border: none;
     background: none;
     border-radius: 50%;
+    display: none;
 }
 #speaker-icon{
     width: 37px;
@@ -62,6 +65,7 @@ input:focus{
     padding: 5px;
     background-color: rgba(255, 208, 205, 0.1);
     border-radius: 4px;
+    display: none;
 }
 #tcontainer{
     text-align: left;
