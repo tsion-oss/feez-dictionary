@@ -1,3 +1,6 @@
+@media  screen and (max-width: 1920px) {
+     
+
 body{
     background-color: #ffd0cd;
     margin: 0;
@@ -7,16 +10,16 @@ body{
 h1{
     color: #707070;
     text-align: center;
-    font-size: 60px;
+    font-size: 90px;
 }
 #btn{
-    width: 80px;
-    height: 35px;
+    width: 130px;
+    height: 45px;
     color: rgb(49, 49, 49);
     background-color: #ffd0cd;
     border: none;
     border-radius: 20px;
-    font-size: 17px;
+    font-size: 25px;
 }
 #mainContainer{
     display: flex;
@@ -27,7 +30,7 @@ h1{
    display: grid;
    justify-self: center;
    background-color: white;
-   width: 380;
+   width: 580;
    height: auto;
    border-radius: 20px;
    padding: 20px;
@@ -38,9 +41,102 @@ h1{
 #input{
     border: none;
     border-bottom: 2px solid #ffd0cd;
-    font-size: 16px;
+    font-size: 25px;
+    margin-right: 40px;
+    height: 50px;
+    width: 320px;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+#audioButton{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    display: none;
+}
+#speaker-icon{
+    width: 47px;
+    height: 47px;
+    background-color: #ffd0cd;
+    border-radius: 20px;
+}
+#example{
+    border-left: #ffd0cd 3px solid;
+    padding: 5px;
+    background-color: rgba(255, 208, 205, 0.1);
+    border-radius: 4px;
+    display: none;
+}
+#tcontainer{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: -20px;
+    font-size: 25px;
+}
+#word-n-button{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+#word-n-button h2 {
+   margin-right: 250px;
+    font-size: 50px;
+    margin-left: 10px;
+    
+}
+}
+ 
+@media  screen and (max-width: 1200px) {
+    
+body{
+    background-color: #ffd0cd;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    color: #707070;
+    text-align: center;
+    font-size: 70px;
+}
+#btn{
+    width: 100px;
+    height: 38px;
+    color: rgb(49, 49, 49);
+    background-color: #ffd0cd;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+   display: grid;
+   justify-self: center;
+   background-color: white;
+   width: 530;
+   height: auto;
+   border-radius: 20px;
+   padding: 30px;
+   margin-top: 100px;
+   overflow: auto;
+}
+  
+#input{
+    border: none;
+    border-bottom: 2px solid #ffd0cd;
+    font-size: 22px;
     margin-right: 40px;
     height: 40px;
+    width: 290px;
 }
 input:focus{
     outline: none;
@@ -71,6 +167,97 @@ input:focus{
     text-align: left;
     margin-left: 40px;
     margin-top: -20px;
+    font-size: 20px;
+}
+#word-n-button{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#word-n-button h2 {
+   margin-right: 260px;
+    font-size: 35px;
+}
+
+}
+@media  screen and (max-width: 1000px) {
+    
+body{
+    background-color: #ffd0cd;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    color: #707070;
+    text-align: center;
+    font-size: 70px;
+}
+#btn{
+    width: 90px;
+    height: 30px;
+    color: rgb(49, 49, 49);
+    background-color: #ffd0cd;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+}
+#mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+   display: grid;
+   justify-self: center;
+   background-color: white;
+   width: 450;
+   height: auto;
+   border-radius: 20px;
+   padding: 20px;
+   margin-top: 100px;
+   overflow: auto;
+}
+  
+#input{
+    border: none;
+    border-bottom: 2px solid #ffd0cd;
+    font-size: 18px;
+    margin-right: 40px;
+    height: 40px;
+    width: 240px;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+#audioButton{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    display: none;
+}
+#speaker-icon{
+    width: 33px;
+    height: 33px;
+    background-color: #ffd0cd;
+    border-radius: 20px;
+}
+#example{
+    border-left: #ffd0cd 3px solid;
+    padding: 5px;
+    background-color: rgba(255, 208, 205, 0.1);
+    border-radius: 4px;
+    display: none;
+}
+#tcontainer{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: -20px;
+    font-size: 19px;
 }
 #word-n-button{
     display: flex;
@@ -80,28 +267,272 @@ input:focus{
 }
 #word-n-button h2 {
    margin-right: 190px;
-    font-size: 30px;
+    font-size: 31px;
 }
-/* @media  screen and (max-width: 1200px){
-    body{
-
-    }
-}
-@media  screen and (max-width: 1000px) {
-    
-}
+} 
 @media  screen and (max-width: 800px) {
-    
-} */
-@media  screen and (max-width: 600px) {
-    h1{
-        font-size: 50px;
-    }
+  
+body{
+    background-color: #ffd0cd;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    color: #707070;
+    text-align: center;
+    font-size: 60px;
+}
+#btn{
+    width: 60px;
+    height: 30px;
+    color: rgb(49, 49, 49);
+    background-color: #ffd0cd;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+   display: grid;
+   justify-self: center;
+   background-color: white;
+   width: 380;
+   height: auto;
+   border-radius: 20px;
+   padding: 20px;
+   margin-top: 100px;
+   overflow: auto;
+}
+  
+#input{
+    border: none;
+    border-bottom: 2px solid #ffd0cd;
+    font-size: 16px;
+    margin-right: 40px;
+    height: 40px;
+    width: 190px;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+#audioButton{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    display: none;
+}
+#speaker-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #ffd0cd;
+    border-radius: 20px;
+}
+#example{
+    border-left: #ffd0cd 3px solid;
+    padding: 5px;
+    background-color: rgba(255, 208, 205, 0.1);
+    border-radius: 4px;
+    display: none;
+}
+#tcontainer{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: -20px;
+    font-size: 17px;
+}
+#word-n-button{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#word-n-button h2 {
+   margin-right: 190px;
+    font-size: 22px;
+}
     
 }
-/* @media screen and (max-width: 450px){
+ @media screen and (max-width: 600px){
     
+body{
+    background-color: #ffd0cd;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-@media screen and (max-width: 400px) {
+h1{
+    color: #707070;
+    text-align: center;
+    font-size: 45px;
+}
+#btn{
+    width: 60px;
+    height: 24px;
+    color: rgb(49, 49, 49);
+    background-color: #ffd0cd;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+#mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+   display: grid;
+   justify-self: center;
+   background-color: white;
+   width: 300;
+   height: auto;
+   border-radius: 20px;
+   padding: 20px;
+   margin-top: 100px;
+   overflow: auto;
+}
+  
+#input{
+    border: none;
+    border-bottom: 2px solid #ffd0cd;
+    font-size: 14px;
+    margin-right: 40px;
+    height: 30px;
+    width: 120px;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+#audioButton{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    display: none;
+}
+#speaker-icon{
+    width: 28px;
+    height: 28px;
+    background-color: #ffd0cd;
+    border-radius: 20px;
+}
+#example{
+    border-left: #ffd0cd 3px solid;
+    padding: 5px;
+    background-color: rgba(255, 208, 205, 0.1);
+    border-radius: 4px;
+    display: none;
+}
+#tcontainer{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: -20px;
+    font-size: 14px;
+}
+#word-n-button{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#word-n-button h2 {
+   margin-right: 160px;
+    font-size: 22px;
+}
+}
+@media screen and (max-width: 450px) {
 
-} */
+    body{
+        background-color: #ffd0cd;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    h1{
+        color: #707070;
+        text-align: center;
+        font-size: 120px;
+    }
+    #btn{
+        width: 80px;
+        height: 35px;
+        color: rgb(49, 49, 49);
+        background-color: #ffd0cd;
+        border: none;
+        border-radius: 20px;
+        font-size: 17px;
+    }
+    #mainContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #container{
+       display: grid;
+       justify-self: center;
+       background-color: white;
+       width: 380;
+       height: auto;
+       border-radius: 20px;
+       padding: 20px;
+       margin-top: 100px;
+       overflow: auto;
+    }
+      
+    #input{
+        border: none;
+        border-bottom: 2px solid #ffd0cd;
+        font-size: 16px;
+        margin-right: 40px;
+        height: 40px;
+    }
+    input:focus{
+        outline: none;
+        border: none;
+    }
+    #audioButton{
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: none;
+        border-radius: 50%;
+        display: none;
+    }
+    #speaker-icon{
+        width: 37px;
+        height: 37px;
+        background-color: #ffd0cd;
+        border-radius: 20px;
+    }
+    #example{
+        border-left: #ffd0cd 3px solid;
+        padding: 5px;
+        background-color: rgba(255, 208, 205, 0.1);
+        border-radius: 4px;
+        display: none;
+    }
+    #tcontainer{
+        text-align: left;
+        margin-left: 40px;
+        margin-top: -20px;
+    }
+    #word-n-button{
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    #word-n-button h2 {
+       margin-right: 190px;
+        font-size: 30px;
+    }
+} 
