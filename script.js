@@ -7,6 +7,7 @@ const paragraphThree = document.querySelector('#synonym')
 const audio = document.querySelector('#audioButton')
 const audioPlayer = new Audio();
 const soundIcon = document.querySelector('#speaker-icon')
+const wordType = document.querySelector('#word-type')
 
 
 
@@ -34,6 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
             audio.style.display = 'none'
           }
           
+          let type = response.data[0].meanings[0].partOfSpeech
+
+          console.log(type)
+          wordType.innerText = type
           
 
            let cit = response.data[0].meanings[0].definitions[0].definition;
@@ -51,6 +56,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 paragraphTwo.style.display = "block"
             }
 
+            let synony = response.data[0].meanings[0].synonyms
+            console.log(synony)
+            
+            let groups = [];
+            for (let i = 0; i < synony.length; i += 3) {
+              groups.push(synony.slice(i, i + 3));
+            }
+            let formattedSynonyms = groups.map(group => {
+              return group.map(synonym => `<u> ${synonym} </u>`).join(' ,  ');
+            }).join("\n\n");
+            
+            paragraphThree.innerHTML = formattedSynonyms;
     });  
 
 });
