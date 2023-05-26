@@ -1,0 +1,65 @@
+<head>
+    <title>Feez Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&family=Ysabeau:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    
+    <body>
+      <nav>
+        <div id="logo" >
+           <a href="index.html"><img id="logoo"  src="FEEZ.png" alt="logo"></a>
+        </div>
+        <ul>
+          <li id="dictionary"><a href="dictionary.html">Dictionary</a></li>
+          <li id="translate"><a href="translate.html">Translate</a></li>
+          
+        </ul>
+       </nav>
+       <p id="firstbreak"></p>
+       
+     <div id="mainContainer">
+       <div id="container">
+         <div id="cont">
+            <input id="input" placeholder="Type the word here">
+            <button type="input"  id="btn">Search</button>
+          </div>
+          <div id="word-n-button">
+               <h2 id="word"></h2> 
+               <button id="audioButton" onclick="playAudio()" ><img id="speaker-icon" src="sp.png" ></button>
+            </div>
+            <div id="tcontainer">
+                <p id="word-type"></p>
+                <p id="meaning"></p>
+                <p id="example"></p>
+                <p id="synonym"></p>
+           </div>
+          </div>
+          
+        </div>
+
+
+        <!-- <footer>
+          <img id="footer logo">
+          <ul id="first-list">
+             <li>Dictionary</li>
+             <li>Translate</li>
+          </ul>
+ 
+          <ul id="second-list">
+             <li>About us</li>
+             <li>Contact us</li>
+             <li>privacy Policy</li>
+             <li>Editorial Policy</li>
+          </ul>
+ 
+          <p id="end-p"> feez Dictionary</p>
+       </footer> -->
+ 
+      </body>
+     
+    

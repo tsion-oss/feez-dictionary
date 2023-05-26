@@ -1,34 +1,65 @@
 <head>
-    <title>Feez Dictionary</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&family=Ysabeau:wght@300&display=swap" rel="stylesheet">
-    </head>
-    
-    
-    <body>
-       <h1>FEEZ DICTIONARY</h1>
-     <div id="mainContainer">
-       <div id="container">
-         <div id="cont">
-            <input id="input" placeholder="Type the word here">
-            <button type="input"  id="btn">Search</button>
-          </div>
-          <div id="word-n-button">
-               <h2 id="word"></h2> 
-               <button id="audioButton" onclick="playAudio()" ><img id="speaker-icon" src="sp.png" ></button>
-          </div>
-            <div id="tcontainer">
-                <p id="word-type"></p>
-                <p id="meaning"></p>
-                <p id="example"></p>
-                <p id="synonym"></p>
-           </div>
-          </div>
+  <title>Feez Dictionary</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script defer src="homepage.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&family=Ysabeau:wght@300&display=swap" rel="stylesheet">
+  </head>
+  
+  
+  <body>
+    <nav>
+     <div id="homepage-logo" >
+        <a href="index.html"><img id="logoo"  src="FEEZ.png" alt="logo"></a>
+     </div>
+     <ul id="nav-li">
+        <li id="dictionary"><a href="dictionary.html">Dictionary</a></li>
+        <li id="translate"><a href="translate.html">Translate</a></li>
+      </ul>
+    </nav>
+  <p id="firstbreak"></p>
+    <div id ="homepage-container">
+          <h2 id="title">A Place Where You Can Learn Everyday</h2>
+          <p id="title-p">Feez is the understandable, credible site that empowers you with answers to all of your questions about words and languages.</p>
         </div>
-      </body>
-     
+       </div>
+    <br>
+     <div id="homesecond-container">
+        <div id="homesecond-wrapper">
+           <div id="homesecond-paragraph">
+            <h2 id="subtitle">The World's Most Powerful Dictionary</h2>
+            <p id="subtitle-p">Whether you are a student or a life long learner, Feez is just that: Yours. We're here to help you find everything you need, from the perfect word to the translation of different languages you've been searching for. The English language is always evolving it is our job to keep up with it.</p>
+            </div>
+            <div>
+              <img id="second-img" src="design.png">
+            </div>
+         </div>
+     </div>
+      
+     <!-- <footer>
+        <img id="footer logo">
+        <ul id="first-list">
+           <a class="type" href="dictionary.html"><li>Dictionary</li></a>
+           <a class="type" href="translate.html"><li>Translate</li></a>
+        </ul>
+        <p id="end-p"> feez Dictionary</p>
+
+         <ul id="second-list">
+           <li>About us</li>
+           <li>Contact us</li>
+           <li>privacy Policy</li>
+           <li>Editorial Policy</li>
+        </ul>
+
+        
+     </footer> -->
+
+   
+   
+    </body>
+   
+  
     

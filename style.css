@@ -1,21 +1,315 @@
 *{
     font-family: 'Ysabeau', sans-serif;
 }
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: auto;
+   
+}
+
+
+#logo{
+    margin-top: 5px;
+    margin-left: -50px;
+}
+#logoo{
+    position: absolute;
+    left: 50px;
+    top: 5px;
+    height: 50px;
+}
+#home-logoo{
+   position: absolute;
+   top: 100px;
+   
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 30px;
+    color: white;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    
+}
+nav ul li:hover{
+    color: #ffd0cd;
+}
+
+/* homepage css */
+#firstbreak{
+    background: #ffe5e3;
+    height: 40px;
+    margin: 0;
+}
+#title{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#title-p{
+    color: white;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0;
+}
+#homepage-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 300px;
+   
+}
+#homesecond-container{
+    padding: 50px;
+    
+}
+ #homesecond-paragraph{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    gap: 100px;
+    
+   }
+#subtitle{
+    display:flex;
+    width: 600px;
+    font-size: 40px;
+    padding-right: 20px;
+   
+}
+#subtitle-p{
+    width: 600;
+    font-size: 23px;
+    padding-right: 20px;
+
+}
+#homepage-logo{
+    margin-right: 300px;
+}
+#homesecond-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#second-img{
+    height: 550px;
+    width: auto;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+/* dictionary page */
+
+#btn{
+    width: 80px;
+    height: 35px;
+    color: rgb(49, 49, 49);
+    background-color: #ffd0cd;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #707070;
+    color: white;
+}
+#mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+   display: grid;
+   justify-self: center;
+   background-color: white;
+   width: 380;
+   height: auto;
+   border-radius: 20px;
+   padding: 20px;
+   margin-top: 200px;
+   overflow: auto;
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+  
+#input{
+    border: none;
+    border-bottom: 2px solid #ffd0cd;
+    font-size: 16px;
+    margin-right: 40px;
+    height: 40px;
+    width: 80px;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+#audioButton{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    display: none;
+}
+#speaker-icon{
+    width: 37px;
+    height: 37px;
+    background-color: #ffd0cd;
+    border-radius: 20px;
+}
+#example{
+    border-left: #ffd0cd 3px solid;
+    padding: 5px;
+    background-color: rgba(255, 208, 205, 0.1);
+    border-radius: 4px;
+    display: none;
+}
+#tcontainer{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+#word-n-button{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#word-n-button h2 {
+   margin-right: 190px;
+    font-size: 30px;
+}
+
+
+/* SECOND HTML PAGE*/
+
+#mainsecondpage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+#translate-container{
+    width: 690px;
+    background-color:white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+   
+}
+#translate-wrapper{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+}
+#translate-wrapper #translatetext-input{
+  display: flex;
+  border-bottom: 1px solid #bbb;
+}
+.translatetext-input .to-text{
+    border-radius: 0px;
+
+}
+#translatetext-input textarea{ 
+   height: 250px;
+   width: 100%;
+   border: none;
+   outline: none;
+   resize: none;
+   font-size: 18px;
+   border-radius: 5px;
+   background: none;
+   padding: 10px 15px;
+   border-right: 1px solid #bbb;
+}
+
+#controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 12px 15px;
+    height: 0px;
+}
+
+#controls select{
+    outline: none;
+    background: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+
+}
+#title{
+    color: white;
+}
+#title-paragraph{
+    color: white;
+}
+
+#translate-container button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
 
 @media  screen and (max-width: 1920px) {
      
 
-body{
-    background-color: #ffd0cd;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+#title{
+    margin-top: 0;
+    font-size: 60px;
 }
-
-h1{
-    color: #707070;
-    text-align: center;
-    font-size: 90px;
+#title-p{
+   font-size: 25;
+}
+#subtitle{
+    font-size: 50px;
+    
+}
+#subtitle-p{
+    font-size: 25px;
+    margin-top: -100px;
+}
+#second-img{
+    margin-right: 40px;
 }
 #btn{
     width: 130px;
@@ -30,6 +324,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 #container{
    display: grid;
@@ -39,8 +334,8 @@ h1{
    height: auto;
    border-radius: 20px;
    padding: 20px;
-   margin-top: 100px;
    overflow: auto;
+   box-shadow: ;
 }
   
 #input{
@@ -101,15 +396,59 @@ input:focus{
 }
 
 }
+@media  screen and (max-width: 1400px) {
+    #title{
+        margin-top: 0;
+        font-size: 55px;
+    }
+    #title-p{
+       font-size: 20;
+    }
+    #subtitle{
+        font-size: 40px;
+        width: 450px;
+        
+    }
+    #subtitle-p{
+        font-size: 23px;
+        width: 450px;
+        margin-top: -100px;
+        
+    }  
+    #second-img{
+        width: 500px;
+        height: 500px;
+    }
+
+}
  
 @media  screen and (max-width: 1200px) {
-    
-body{
-    background-color: #ffd0cd;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+    #translate-container{
+        width: 600px;
+    }
+    #title{
+        margin-top: 0;
+        font-size: 47px;
+    }
+    #title-p{
+       font-size: 21;
+    }
+    #subtitle{
+        font-size: 38px;
+        width: 400px;
+        
+    }
+    #subtitle-p{
+        font-size: 20px;
+        width: 400px;
+        margin-top: -100px;
+        
+    }  
+    #second-img{
+        width: 440px;
+        height: 440px;
+    }
+
 h1{
     color: #707070;
     text-align: center;
@@ -137,7 +476,6 @@ h1{
    height: auto;
    border-radius: 20px;
    padding: 30px;
-   margin-top: 100px;
    overflow: auto;
 }
   
@@ -197,13 +535,38 @@ input:focus{
 
 }
 @media  screen and (max-width: 1000px) {
-    
-body{
-    background-color: #ffd0cd;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+    #translate-container{
+        width: 500px;
+    } 
+    #title{
+        margin-top: 0;
+        font-size: 43px;
+    }
+    #title-p{
+       font-size: 20;
+       width: 500px;
+    }
+    #subtitle{
+        font-size: 38px;
+        width: 500px;
+        
+    }
+    #subtitle-p{
+        font-size: 20px;
+        width: 500px;
+        
+    }  
+    #second-img{
+        width: 600px;
+        height: 600px;
+        padding-top: 100px;
+    } 
+     #homesecond-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 h1{
     color: #707070;
     text-align: center;
@@ -231,7 +594,6 @@ h1{
    height: auto;
    border-radius: 20px;
    padding: 20px;
-   margin-top: 100px;
    overflow: auto;
 }
   
@@ -291,13 +653,44 @@ input:focus{
 }
 } 
 @media  screen and (max-width: 800px) {
-  
-body{
-    background-color: #ffd0cd;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+   
+    #translate-container{
+        width: 400px;
+    }
+    #title{
+        margin-top: 0;
+        font-size: 39px;
+        width: 500px;
+    }
+    #title-p{
+       font-size: 18;
+       width: 400px;
+       
+    }
+    #subtitle{
+        font-size: 38px;
+        width: 500px;
+        
+    }
+    #subtitle-p{
+        font-size: 20px;
+        width: 400px;
+        margin-top: -100px;
+        
+        
+    }  
+    #second-img{
+        width: 500px;
+        height: 500px;
+        padding-top: 100px;
+    }
+    #homesecond-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
 h1{
     color: #707070;
     text-align: center;
@@ -325,7 +718,6 @@ h1{
    height: auto;
    border-radius: 20px;
    padding: 20px;
-   margin-top: 100px;
    overflow: auto;
 }
   
@@ -385,13 +777,53 @@ input:focus{
     
 }
  @media screen and (max-width: 600px){
-    
-body{
-    background-color: #ffd0cd;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+    #translate-container{
+        width: 300px;
+    }
+    #translate{
+        margin-right: -20px;
+    }
+    #dictionary{
+        margin-right: -20px;
+    }
+    #nav-li {
+        display: flex;
+        
+    }
+    #title{
+        margin-top: 0;
+        font-size: 35px;
+        width: 450px;
+    }
+    #title-p{
+       font-size: 18;
+       width: 370px;
+       
+    }
+    #subtitle{
+        font-size: 35px;
+        width: 490px;
+        
+    }
+    #subtitle-p{
+        font-size: 19px;
+        width: 390px;
+        margin-top: -100px;
+        
+        
+    }  
+    #second-img{
+        width: 450px;
+        height: 450px;
+        padding-top: 100px;
+    }
+    #homesecond-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
 h1{
     color: #707070;
     text-align: center;
@@ -419,7 +851,6 @@ h1{
    height: auto;
    border-radius: 20px;
    padding: 20px;
-   margin-top: 100px;
    overflow: auto;
 }
   
@@ -477,91 +908,4 @@ input:focus{
     margin-top: 0;
 }
 }
-@media screen and (max-width: 450px) {
 
-    body{
-        background-color: #ffd0cd;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-    h1{
-        color: #707070;
-        text-align: center;
-        font-size: 120px;
-    }
-    #btn{
-        width: 80px;
-        height: 35px;
-        color: rgb(49, 49, 49);
-        background-color: #ffd0cd;
-        border: none;
-        border-radius: 20px;
-        font-size: 17px;
-    }
-    #mainContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #container{
-       display: grid;
-       justify-self: center;
-       background-color: white;
-       width: 380;
-       height: auto;
-       border-radius: 20px;
-       padding: 20px;
-       margin-top: 100px;
-       overflow: auto;
-    }
-      
-    #input{
-        border: none;
-        border-bottom: 2px solid #ffd0cd;
-        font-size: 16px;
-        margin-right: 40px;
-        height: 40px;
-        width: 80px;
-    }
-    input:focus{
-        outline: none;
-        border: none;
-    }
-    #audioButton{
-        width: 30px;
-        height: 30px;
-        border: none;
-        background: none;
-        border-radius: 50%;
-        display: none;
-    }
-    #speaker-icon{
-        width: 37px;
-        height: 37px;
-        background-color: #ffd0cd;
-        border-radius: 20px;
-    }
-    #example{
-        border-left: #ffd0cd 3px solid;
-        padding: 5px;
-        background-color: rgba(255, 208, 205, 0.1);
-        border-radius: 4px;
-        display: none;
-    }
-    #tcontainer{
-        text-align: left;
-        margin-left: 40px;
-        margin-top: -20px;
-    }
-    #word-n-button{
-        display: flex;
-        align-items: center;
-        margin-left: 30px;
-        margin-top: 10px;
-    }
-    #word-n-button h2 {
-       margin-right: 190px;
-        font-size: 30px;
-    }
-} 
