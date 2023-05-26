@@ -335,7 +335,7 @@ input:focus{
    border-radius: 20px;
    padding: 20px;
    overflow: auto;
-   box-shadow: ;
+  
 }
   
 #input{
@@ -777,9 +777,9 @@ input:focus{
     
 }
  @media screen and (max-width: 600px){
-    #translate-container{
+    #translate-container{ 
         width: 300px;
-    }
+    } 
     #translate{
         margin-right: -20px;
     }
