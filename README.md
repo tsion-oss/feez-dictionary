@@ -2,13 +2,15 @@
 
  Description:
 
- The Feez Dictionary project aims to provide users with user-friendly and verstaile tool for looking up word and defintions.
+ The Feez Dictionary project aims to provide users with user-friendly and verstaile tool for looking up word, defintions and translation.
 
  Features of the Feez Dictionary:
 
  - Word Definitons: Get concise and detailed explanations of word meanings.
 
  - Examples and usage: Explore sample sentence and contexts in which the word is commonly used.
+
+ - Translation: Used to translate from one language to another. 
 
    How to Get Started:
 
@@ -17,7 +19,8 @@
 2. ApI key: 
    - visit https://dictionaryapi.dev/ to find the API key.
 
-3. 
+3. myMemory:
+   - https://mymemory.translated.net/
 
 
 

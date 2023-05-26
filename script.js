@@ -10,25 +10,13 @@ const soundIcon = document.querySelector('#speaker-icon');
 const wordType = document.querySelector('#word-type');
 const container = document.getElementById('container');
 
-function toggleDarkMode() {
-  container.classList.toggle('dark');
-}
 
-function clearContainer() {
-  headingTwo.innerHTML = '';
-  paragraph.innerText = '';
-  paragraphTwo.innerText = '';
-  paragraphThree.innerHTML = '';
-  audio.style.display = 'none';
-  wordType.innerText = '';
-}
-
-function searchWord() {
-  let info = textInput.value;
-  console.log(info);
-
+ //An event listener for a button clik retrieves the input value from a text input field, and make Get request to a dictionary API to fetch information for the provided input.
+  button.addEventListener('click', () => {
+    let info = textInput.value;
+     console.log(info);
   axios
-    .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${info}`)
+  .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${info}`)
     .then((response) => {
       console.log(response);
 
@@ -58,11 +46,10 @@ function searchWord() {
           paragraphTwo.style.backgroundColor = 'transparent';
           paragraphTwo.style.display = 'block';
         }
-
         let synony = response.data[0].meanings[0]?.synonyms;
         console.log(synony);
-
-        let groups = [];
+//Organizes synonyms into groups of three, formats them by enclosing each synonym in u tags, and assigns the formatted synonyms to the HTML  content of paragraphThree
+         let groups = [];
         for (let i = 0; i < synony.length; i += 3) {
           groups.push(synony.slice(i, i + 3));
         }
@@ -73,30 +60,15 @@ function searchWord() {
           .join('\n\n');
 
         paragraphThree.innerHTML = formattedSynonyms;
-      } else {
-        console.log(`Can't find the meanings of '${info}'. Please try to search for another word.`);
+      } else{
         headingTwo.innerHTML = `Can't find the meanings of '${info}'. Please try to search for another word.`;
         audio.style.display = 'none';
-        clearContainer();
       }
-    })
-    .catch((error) => {
-      console.log('An error occurred:', error);
-      headingTwo.innerHTML = 'An error occurred while fetching the data. Please try again.';
-      audio.style.display = 'none';
-      clearContainer();
-    });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  button.addEventListener('click', searchWord);
-
-  textInput.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-      searchWord();
-    }
-  });
-});
+      
+      })
+    
+  })
+    
 
 audio.addEventListener('click', async () => {
   const wordTwo = textInput.value;
@@ -107,7 +79,7 @@ audio.addEventListener('click', async () => {
   audioPlayer.play();
 });
 
-textInput.addEventListener('input', clearContainer);
+
 
 
 

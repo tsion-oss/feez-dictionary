@@ -104,31 +104,40 @@ const translateButton = document.querySelector('#translate-btn')
 const fromText = document.querySelector('.from-text');
 const toText = document.querySelector('.to-text')
 
-Array.from(selectTag).forEach((tag, id) => {
-    for (const country_code in countries){
-        console.log(countries[country_code])
-        let selected = " ";
-        if (id === 0 && country_code === 'am-ET'){
-            selected = 'selected'
-        } else if(id === 1 && country_code === 'en-GB'){
-            selected = 'selected'
-        }
-        let option = `<option value="${country_code}">${countries[country_code]}</option>`;
-        tag.insertAdjacentHTML("beforeend", option)
+//Set the selected options in select elements based on the index and country code
+selectTag.forEach((selectElement, index) => {
+    for(const countryCode in countries) {
+        const isSelected = (index === 0 && countryCode == 'am-ET') || (index === 1 && countryCode =='en-GB') 
+
+
+        const option = document.createElement('option')
+        option.value = countryCode;
+        option.text = countries[countryCode]
+     if (isSelected) {
+        option.isSelected = true;
     }
-});
+    selectElement.appendChild(option)
+}
+})
 
-
-
+//An event listener for a button click, retrieves input values and constructs an API URL for translation using the provided values
 translateButton.addEventListener('click', () => {
         let textt = fromText.value;
         translateFrom = selectTag[0].value;
         translateTo = selectTag[1].value;
         console.log(textt, translateFrom, translateTo)
         let apiUrl = `https://api.mymemory.translated.net/get?q=${textt}&langpair=${translateFrom}|${translateTo}`
-        
-        fetch(apiUrl).then(res => res.json()).then(data => {
-            console.log(data);
-            toText.value = data.responseData.translatedText;
-        })
+   
+//asynchronously fetches data from an API using the provided URL parses the response as JSON and assigns the translated text to a text input field.
+        async function fetchData() {
+            const response = await fetch(apiUrl)
+            const data = await response.json()
+            toText.value = data.responseData.translatedText
+        }
+        fetchData()
 })
+    
+
+
+
+
